@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HelpWithCode - Modern Web Development Agency. We build stunning websites that drive growth.">
+    <meta name="keywords" content="web development, website design, e-commerce, UI/UX, web agency">
+    <meta name="author" content="HelpWithCode">
+    <title>HelpWithCode - Modern Web Development Agency</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo-container">
+                <svg class="logo" width="60" height="60" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#0066ff;stop-opacity:1" />
+                        </linearGradient>
+                        <filter id="glow">
+                            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <!-- Circle -->
+                    <circle cx="100" cy="100" r="90" fill="none" stroke="url(#blueGrad)" stroke-width="2" filter="url(#glow)" opacity="0.8"/>
+                    <!-- H Letter -->
+                    <path d="M 35 60 L 35 140 M 35 100 L 65 100 M 65 60 L 65 140" stroke="#ffffff" stroke-width="12" stroke-linecap="round" fill="none"/>
+                    <!-- W Letter -->
+                    <path d="M 75 60 L 85 140 L 100 80 L 115 140 L 125 60" stroke="url(#blueGrad)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#glow)"/>
+                    <!-- C Letter -->
+                    <path d="M 165 70 Q 135 60 135 100 Q 135 140 165 130" stroke="#e0e0e0" stroke-width="12" stroke-linecap="round" fill="none"/>
+                </svg>
+                <span class="logo-text">HelpWithCode</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>We Build Modern Websites That Drive Growth</h1>
+                <p>Transform your digital presence with cutting-edge web solutions. We craft stunning, high-performance websites that convert visitors into customers.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">Get Started</a>
+                    <a href="#portfolio" class="btn-secondary">View Our Work</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <svg class="hero-logo" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="heroBlueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#0066ff;stop-opacity:1" />
+                        </linearGradient>
+                        <filter id="heroGlow">
+                            <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                        <filter id="strongGlow">
+                            <feGaussianBlur stdDeviation="15" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <!-- Outer Circle with Glow -->
+                    <circle cx="250" cy="250" r="220" fill="none" stroke="url(#heroBlueGrad)" stroke-width="4" filter="url(#strongGlow)" opacity="0.9"/>
+                    <!-- Inner subtle glow -->
+                    <circle cx="250" cy="250" r="220" fill="none" stroke="#00d4ff" stroke-width="2" opacity="0.3"/>
+                    
+                    <!-- H Letter - White/Silver -->
+                    <g filter="url(#heroGlow)">
+                        <path d="M 80 140 L 80 360 M 80 250 L 165 250 M 165 140 L 165 360" 
+                              stroke="#ffffff" stroke-width="32" stroke-linecap="round" fill="none"/>
+                    </g>
+                    
+                    <!-- W Letter - Blue Gradient with strong glow -->
+                    <g filter="url(#strongGlow)">
+                        <path d="M 185 140 L 215 360 L 250 200 L 285 360 L 315 140" 
+                              stroke="url(#heroBlueGrad)" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    </g>
+                    
+                    <!-- C Letter - Silver/White -->
+                    <g filter="url(#heroGlow)">
+                        <path d="M 415 170 Q 335 140 335 250 Q 335 360 415 330" 
+                              stroke="#e8e8e8" stroke-width="32" stroke-linecap="round" fill="none"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Our Services</h2>
+                <p>Comprehensive web solutions tailored to your business needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">🌐</div>
+                    <h3>Website Development</h3>
+                    <p>Custom-built websites using the latest technologies. From landing pages to complex web applications, we bring your vision to life.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">🛒</div>
+                    <h3>E-Commerce Solutions</h3>
+                    <p>Powerful online stores that drive sales. Seamless shopping experiences with secure payment integration and inventory management.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Beautiful, intuitive interfaces that users love. We create engaging designs that enhance user experience and brand identity.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Maintenance & Support</h3>
+                    <p>Keep your website running smoothly 24/7. Regular updates, security patches, and technical support to ensure peak performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>What Sets Us Apart</h2>
+                <p>Excellence in every pixel, performance in every interaction</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">✨</div>
+                    <h3>Modern Design</h3>
+                    <p>Cutting-edge aesthetics that capture attention and reflect your brand</p>
+                </div>
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Performance</h3>
+                    <p>Lightning-fast load times and optimized code for superior speed</p>
+                </div>
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure & Safe</h3>
+                    <p>Enterprise-grade security to protect your data and users</p>
+                </div>
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">📈</div>
+                    <h3>SEO Optimized</h3>
+                    <p>Built for search engines to maximize your online visibility</p>
+                </div>
+                <div class="feature-item fade-in">
+                    <div class="feature-icon">📱</div>
+                    <h3>Fully Responsive</h3>
+                    <p>Perfect display on every device, from mobile to desktop</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Our Portfolio</h2>
+                <p>Explore our recent projects and success stories</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item fade-in">
+                    <div class="portfolio-overlay">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Modern online store with 200% sales increase</p>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in">
+                    <div class="portfolio-overlay">
+                        <h3>SaaS Dashboard</h3>
+                        <p>Analytics platform for 10,000+ users</p>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in">
+                    <div class="portfolio-overlay">
+                        <h3>Corporate Website</h3>
+                        <p>Enterprise solution for Fortune 500 company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose" id="why-us">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Why Choose HelpWithCode</h2>
+                <p>Your success is our mission</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-item fade-in">
+                    <div class="why-number">01</div>
+                    <div class="why-content">
+                        <h3>Expert Team</h3>
+                        <p>Skilled developers, designers, and strategists with years of experience in delivering exceptional web solutions.</p>
+                    </div>
+                </div>
+                <div class="why-item fade-in">
+                    <div class="why-number">02</div>
+                    <div class="why-content">
+                        <h3>Latest Technology</h3>
+                        <p>We use cutting-edge tools and frameworks to ensure your website is built with the best technology available.</p>
+                    </div>
+                </div>
+                <div class="why-item fade-in">
+                    <div class="why-number">03</div>
+                    <div class="why-content">
+                        <h3>On-Time Delivery</h3>
+                        <p>We respect deadlines and deliver projects on schedule without compromising on quality or functionality.</p>
+                    </div>
+                </div>
+                <div class="why-item fade-in">
+                    <div class="why-number">04</div>
+                    <div class="why-content">
+                        <h3>24/7 Support</h3>
+                        <p>Round-the-clock assistance to address any concerns and keep your website running smoothly at all times.</p>
+                    </div>
+                </div>
+                <div class="why-item fade-in">
+                    <div class="why-number">05</div>
+                    <div class="why-content">
+                        <h3>Affordable Pricing</h3>
+                        <p>Competitive rates without hidden fees. Get premium quality solutions that fit your budget.</p>
+                    </div>
+                </div>
+                <div class="why-item fade-in">
+                    <div class="why-number">06</div>
+                    <div class="why-content">
+                        <h3>Proven Results</h3>
+                        <p>Track record of successful projects with measurable improvements in traffic, engagement, and conversions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section>
+        <div class="container">
+            <div class="cta fade-in">
+                <h2>Ready to Elevate Your Digital Presence?</h2>
+                <p>Let's transform your ideas into a stunning reality. Get started with a free consultation today.</p>
+                <a href="#contact" class="btn-primary">Start Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Get In Touch</h2>
+                <p>Let's discuss your project and bring your vision to life</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info fade-in">
+                    <h3>Contact Information</h3>
+                    <p>Have a project in mind? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📧</div>
+                            <div>
+                                <strong>Email</strong><br>
+                                <span style="color: var(--text-secondary)">info@helpwithcode.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📱</div>
+                            <div>
+                                <strong>Phone</strong><br>
+                                <span style="color: var(--text-secondary)">+1 (555) 123-4567</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">📍</div>
+                            <div>
+                                <strong>Location</strong><br>
+                                <span style="color: var(--text-secondary)">123 Tech Street, Digital City</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form fade-in" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>HelpWithCode</h3>
+                <p>We're a passionate team of developers and designers dedicated to creating exceptional web experiences that drive business growth.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Twitter">𝕏</a>
+                    <a href="#" aria-label="LinkedIn">in</a>
+                    <a href="#" aria-label="GitHub">gh</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">Web Development</a></li>
+                    <li><a href="#services">E-Commerce</a></li>
+                    <li><a href="#services">UI/UX Design</a></li>
+                    <li><a href="#services">Maintenance</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 HelpWithCode. All rights reserved. Built with passion and precision.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
